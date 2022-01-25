@@ -1,0 +1,30 @@
+.c-btn {
+    @include font-montserrat-semibold;
+    @include font-size(1.6);
+    background-color: transparent;
+    border: solid 2px #0285bd;
+    border-radius: 9999px;
+    color: #0285bd;
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    line-height: 100%;
+    padding: 12px 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #029adb;
+        color: #ffffff;
+    }
+
+    // 1
+    i {
+        display: inline-block;
+        margin-left: $global-spacing-unit-xxsmall;
+        vertical-align: bottom;
+    }
+
+    @include media('>tablet') {
+    }
+}

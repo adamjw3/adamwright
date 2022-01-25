@@ -1,0 +1,65 @@
+// =============================================================================
+// Global Settings
+// =============================================================================
+
+// Global Spacing
+// -----------------------------------------------------------------------------
+//
+// Purpose: Set spacing units which can then be re-used to keep spacing consistent
+//
+//
+// 1.
+//
+// -----------------------------------------------------------------------------
+
+$global-spacing-unit-xxsmall: 8px;
+$global-spacing-unit-xsmall: 16px;
+$global-spacing-unit-small: 24px;
+$global-spacing-unit: 32px;
+$global-spacing-unit-large: 40px;
+$global-spacing-unit-xlarge: 48px;
+$global-spacing-unit-xxlarge: 56px;
+
+// =============================================================================
+// Aliases
+// =============================================================================
+
+// Unit aliases
+// -----------------------------------------------------------------------------
+//
+// Purpose: Map some nicer/shorter aliases to make things a little easier to work with.
+//
+//
+// 1.
+//
+// -----------------------------------------------------------------------------
+
+$unit-xxsmall: $global-spacing-unit-xxsmall;
+$unit-xsmall: $global-spacing-unit-xsmall;
+$unit-small: $global-spacing-unit-small;
+$unit: $global-spacing-unit;
+$unit-large: $global-spacing-unit-large;
+$unit-xlarge: $global-spacing-unit-xlarge;
+$unit-xxlarge: $global-spacing-unit-xxlarge;
+
+// Global Component Margins
+// -----------------------------------------------------------------------------
+//
+// Purpose: Setting the component margins globally so it can be easily changed in 1 place
+//
+//
+// 1.
+//
+// -----------------------------------------------------------------------------
+
+@mixin global-component-margins() {
+    display: inline-block;
+    margin-bottom: $global-spacing-unit;
+    margin-top: $global-spacing-unit;
+    width: 100%;
+
+    @include media('>=desktop') {
+        margin-bottom: $global-spacing-unit-large;
+        margin-top: $global-spacing-unit-large;
+    }
+}

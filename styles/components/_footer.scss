@@ -1,0 +1,125 @@
+.c-footer {
+    @include font-size(1.5);
+    grid-column: bleed-start / bleed-end;
+    background-color: #ffffff;
+    padding: 50px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        @include media('>=tablet') {
+            width: 50%;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: none;
+        background-color: #1e1d1d;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+
+        @include media('>=tablet') {
+            display: block;
+        }
+    }
+}
+
+.c-footerinner {
+    grid-column: main-start / main-end;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    z-index: 2;
+}
+
+.c-footer__col1 {
+    grid-column: col-start 1 / span 12;
+    display: flex;
+    order: 2;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include media('>=tablet') {
+        grid-column: col-start 1 / span 6;
+        order: 1;
+    }
+}
+
+.c-footer__logo {
+    display: block;
+    margin-bottom: auto;
+    position: relative;
+    left: -10px;
+}
+
+.c-footer__copyright {
+    @include font-size(1.5);
+    display: block;
+    line-height: 120%;
+    color: #9e9e9e;
+}
+
+.c-footer__col2 {
+    grid-column: col-start 1 / span 12;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include media('>=tablet') {
+        grid-column: col-start 7 / span 5;
+        order: 2;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.c-footer__section {
+    margin: 0;
+
+    @include media('>=tablet') {
+        margin-left: 50px;
+    }
+
+    @include media('>=desktop') {
+        margin: 0 50px;
+    }
+
+    ul {
+        margin-bottom: 48px;
+
+        @include media('>=tablet') {
+            margin: 0;
+        }
+    }
+
+    li,
+    span {
+        @include font-size(1.5);
+        display: block;
+        color: #ffffff;
+        margin-bottom: 24px;
+    }
+
+    span {
+        margin-bottom: 28px;
+    }
+}
+
+.c-footer__section-header {
+    @include font-size(1.5);
+    color: #868585;
+    margin-bottom: 16px;
+}

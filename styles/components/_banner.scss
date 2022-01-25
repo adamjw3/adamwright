@@ -1,0 +1,129 @@
+.c-banner {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    @include media('>=desktop') {
+        min-height: 550px;
+    }
+}
+
+.c-banner__inner {
+    grid-column: col-start 1 / span 12;
+    text-align: center;
+    z-index: 10;
+
+    @include media('>=desktop') {
+        grid-column: col-start 3 / span 8;
+        text-align: left;
+    }
+}
+
+.c-banner__header {
+    margin-bottom: $unit-large;
+}
+
+.c-banner__intro {
+    @include font-size(1.6);
+    line-height: 160%;
+    margin-bottom: $unit;
+
+    @include media('>=desktop') {
+        width: 80%;
+    }
+}
+
+.c-banner__btn {
+    display: inline-block;
+    margin-bottom: $unit-xlarge;
+}
+
+.c-banner__links {
+    display: none;
+    @include media('>=desktop') {
+        display: block;
+        position: absolute;
+        bottom: 10rem;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    li {
+        @include font-montserrat-bold;
+        @include font-size(1.5);
+        display: inline-block;
+        margin-right: $unit-large;
+    }
+
+    a {
+        color: #000000;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-color: #000000;
+            bottom: -5px;
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+.c-banner__scroller {
+    width: 100px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 99999px;
+    position: absolute;
+    bottom: 8rem;
+    right: 0;
+    transform: rotateZ(90deg);
+    transform-origin: top right;
+
+    &::after {
+        content: '';
+        background-color: #000000;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(5px, -50%);
+        animation: 3s ease-in-out infinite scrollerIndicator;
+    }
+}
+
+@keyframes scrollerIndicator {
+    from {
+        transform: translate(5px, -50%);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(90px, -50%);
+        opacity: 0;
+    }
+}

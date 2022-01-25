@@ -1,0 +1,16 @@
+.c-work {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+}
+
+.c-work__inner {
+    grid-column: col-start 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+
+    @include media('>=desktop') {
+        grid-column: col-start 2 / span 12;
+    }
+}

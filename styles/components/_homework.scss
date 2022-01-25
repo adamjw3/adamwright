@@ -1,0 +1,90 @@
+.c-home-work {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    padding: 24px 0;
+    background-color: #f7f7f7;
+    position: relative;
+
+    @include media('>=tablet') {
+        padding: 40px 0;
+    }
+
+    @include media('>=desktop') {
+        padding: 140px 0;
+    }
+
+    &:before {
+        content: '';
+        background-color: #f7f7f7;
+        height: 100%;
+        width: calc(100vw);
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        z-index: 1;
+    }
+}
+
+.c-home-work__inner {
+    grid-column: col-start 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    z-index: 2;
+
+    @include media('>=desktop') {
+        grid-column: col-start 2 / span 12;
+    }
+}
+
+.c-home-work__header {
+    grid-column: col-start 1 / span 12;
+    margin-bottom: 8px;
+
+    @include media('>=tablet') {
+        margin-bottom: 20px;
+    }
+
+    @include media('>=desktop') {
+        grid-column: col-start 1 / span 4;
+        margin-bottom: 48px;
+    }
+}
+
+.c-home-work__item-1 {
+    grid-column: col-start 1 / span 12;
+    margin-bottom: 8px;
+
+    @include media('>=tablet') {
+        margin-bottom: 20px;
+    }
+
+    @include media('>=tablet') {
+        grid-column: col-start 1 / span 4;
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.c-home-work__item-2 {
+    grid-column: col-start 1 / span 12;
+
+    @include media('>=tablet') {
+        grid-column: col-start 6 / span 6;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.c-home-work__link {
+    @include font-montserrat-semibold;
+    @include font-size(1.5);
+    color: #029adb;
+    grid-column: col-start 1 / span 12;
+}
