@@ -1,5 +1,6 @@
 import React from 'react';
 import Masonry from 'react-masonry-css';
+import Image from 'next/image';
 
 const breakpointColumnsObj = {
     default: 2,
@@ -15,7 +16,9 @@ const Work = () => {
                 <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
                     <div className="c-work__item">
                         <a href="" className="c-work__link">
-                            <img src="/images/pup.png" alt="" className="c-work__image" />
+                            <div className="c-work__image">
+                                <Image src="/images/pup.png" layout="responsive" objectFit="cover" width="652" height="355" alt="" />
+                            </div>
                             <div className="c-work__content">
                                 <h2 className="c-work__title heading">PickupPeople</h2>
                                 <div className="c-work__body">
@@ -29,7 +32,9 @@ const Work = () => {
                     </div>
                     <div className="c-work__item">
                         <a href="" className="c-work__link">
-                            <img src="/images/step2wellbeing.png" alt="" className="c-work__image" />
+                            <div className="c-work__image">
+                                <Image src="/images/step2wellbeing.png" layout="responsive" objectFit="cover" width="326" height="497" alt="" />
+                            </div>
                             <div className="c-work__content">
                                 <h2 className="c-work__title heading">PickupPeople</h2>
                                 <div className="c-work__body">
@@ -43,7 +48,9 @@ const Work = () => {
                     </div>
                     <div className="c-work__item">
                         <a href="" className="c-work__link">
-                            <img src="/images/demamiel.png" alt="" className="c-work__image" />
+                            <div className="c-work__image">
+                                <Image src="/images/demamiel.png" layout="responsive" objectFit="cover" width="326" height="497" alt="" />
+                            </div>
                             <div className="c-work__content">
                                 <h2 className="c-work__title heading">PickupPeople</h2>
                                 <div className="c-work__body">
@@ -57,7 +64,9 @@ const Work = () => {
                     </div>
                     <div className="c-work__item">
                         <a href="" className="c-work__link">
-                            <img src="/images/pup.png" alt="" className="c-work__image" />
+                            <div className="c-work__image">
+                                <Image src="/images/pup.png" layout="responsive" objectFit="cover" width="652" height="355" alt="" />
+                            </div>
                             <div className="c-work__content">
                                 <h2 className="c-work__title heading">PickupPeople</h2>
                                 <div className="c-work__body">
