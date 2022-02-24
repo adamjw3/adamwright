@@ -21,7 +21,7 @@ const TickerSlider: React.FC<TickerSliderProps> = ({ className, tickerSpeed, rig
 
     useEffect(() => {
         updateSlider();
-    });
+    }, []);
 
     const flickityOptions = {
         cellAlign: 'left',
