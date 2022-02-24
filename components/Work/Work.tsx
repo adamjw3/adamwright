@@ -1,6 +1,7 @@
 import React from 'react';
 import Masonry from 'react-masonry-css';
 import Image from 'next/image';
+import Heading from '../common/Heading';
 
 const breakpointColumnsObj = {
     default: 2,
@@ -19,14 +20,10 @@ const Work = () => {
                             <div className="c-work__image">
                                 <Image src="/images/pup.png" layout="responsive" objectFit="cover" width="652" height="355" alt="" />
                             </div>
-                            <div className="c-work__content">
-                                <h2 className="c-work__title heading">PickupPeople</h2>
-                                <div className="c-work__body">
-                                    <p className="para">
-                                        We completed an in-depth audience-led discovery project to understand how the Open University Business Development Team website needed to be optimised,
-                                        incorporating quantitative conversion and content analysis, search intent, and user testing to identify areas of improvement.
-                                    </p>
-                                </div>
+                            <div className="c-work__title">
+                                <Heading tag="h2" className="heading">
+                                    PickupPeople
+                                </Heading>
                             </div>
                         </a>
                     </div>
@@ -35,14 +32,10 @@ const Work = () => {
                             <div className="c-work__image">
                                 <Image src="/images/step2wellbeing.png" layout="responsive" objectFit="cover" width="326" height="497" alt="" />
                             </div>
-                            <div className="c-work__content">
-                                <h2 className="c-work__title heading">PickupPeople</h2>
-                                <div className="c-work__body">
-                                    <p className="para">
-                                        We completed an in-depth audience-led discovery project to understand how the Open University Business Development Team website needed to be optimised,
-                                        incorporating quantitative conversion and content analysis, search intent, and user testing to identify areas of improvement.
-                                    </p>
-                                </div>
+                            <div className="c-work__title">
+                                <Heading tag="h2" className="heading">
+                                    Step2Wellbeing
+                                </Heading>
                             </div>
                         </a>
                     </div>
@@ -51,14 +44,10 @@ const Work = () => {
                             <div className="c-work__image">
                                 <Image src="/images/demamiel.png" layout="responsive" objectFit="cover" width="326" height="497" alt="" />
                             </div>
-                            <div className="c-work__content">
-                                <h2 className="c-work__title heading">PickupPeople</h2>
-                                <div className="c-work__body">
-                                    <p className="para">
-                                        We completed an in-depth audience-led discovery project to understand how the Open University Business Development Team website needed to be optimised,
-                                        incorporating quantitative conversion and content analysis, search intent, and user testing to identify areas of improvement.
-                                    </p>
-                                </div>
+                            <div className="c-work__title">
+                                <Heading tag="h2" className="heading">
+                                    Demamiel
+                                </Heading>
                             </div>
                         </a>
                     </div>
@@ -67,14 +56,10 @@ const Work = () => {
                             <div className="c-work__image">
                                 <Image src="/images/pup.png" layout="responsive" objectFit="cover" width="652" height="355" alt="" />
                             </div>
-                            <div className="c-work__content">
-                                <h2 className="c-work__title heading">PickupPeople</h2>
-                                <div className="c-work__body">
-                                    <p className="para">
-                                        We completed an in-depth audience-led discovery project to understand how the Open University Business Development Team website needed to be optimised,
-                                        incorporating quantitative conversion and content analysis, search intent, and user testing to identify areas of improvement.
-                                    </p>
-                                </div>
+                            <div className="c-work__title">
+                                <Heading tag="h2" className="heading">
+                                    Demamiel
+                                </Heading>
                             </div>
                         </a>
                     </div>

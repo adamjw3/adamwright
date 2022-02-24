@@ -4,13 +4,24 @@ import FancyLink from '../FancyLink';
 const Mobile = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const OnBurgerClick = () => {
+    const OnNavigateClick = () => {
         setIsMenuOpen(!isMenuOpen);
+
+        if (!isMenuOpen) {
+            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        } else {
+            document.getElementsByTagName('body')[0].style.overflow = 'auto';
+        }
     };
 
     return (
         <>
-            <FancyLink destination="/contact" a11yText="text" extraClasses="c-header__mobile-contact">
+            <FancyLink
+                destination="/contact"
+                a11yText="text"
+                extraClasses={isMenuOpen ? 'c-header__mobile-contact c-header__mobile-contact--isopen' : 'c-header__mobile-contact'}
+                onClick={OnNavigateClick}
+            >
                 Contact
             </FancyLink>
             <FancyLink destination="/" a11yText="Home" extraClasses="c-header__logo-mobile">
@@ -60,7 +71,7 @@ const Mobile = () => {
                     />
                 </svg>
             </FancyLink>
-            <button aria-label="Menu" onClick={OnBurgerClick} className={isMenuOpen ? 'c-header__burger c-header__burger--open' : 'c-header__burger'}>
+            <button aria-label="Menu" onClick={OnNavigateClick} className={isMenuOpen ? 'c-header__burger c-header__burger--open' : 'c-header__burger'}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -69,29 +80,26 @@ const Mobile = () => {
                 <nav className="c-header__mobile-nav">
                     <ul>
                         <li>
-                            <FancyLink destination="/work" a11yText="text">
+                            <FancyLink destination="/work" a11yText="text" onClick={OnNavigateClick}>
                                 Work
                             </FancyLink>
                         </li>
                         <li>
-                            <FancyLink destination="/services" a11yText="text">
+                            <FancyLink destination="/services" a11yText="text" onClick={OnNavigateClick}>
                                 Services
                             </FancyLink>
                         </li>
                         <li>
-                            <FancyLink destination="/about" a11yText="text">
+                            <FancyLink destination="/about" a11yText="text" onClick={OnNavigateClick}>
                                 About
                             </FancyLink>
                         </li>
                         <li>
-                            <FancyLink destination="/insights" a11yText="text">
+                            <FancyLink destination="/insights" a11yText="text" onClick={OnNavigateClick}>
                                 Insights
                             </FancyLink>
                         </li>
                     </ul>
-                    <FancyLink destination="/contact" a11yText="text" extraClasses="c-header__btn-contact-mobile c-btn">
-                        Contact
-                    </FancyLink>
                 </nav>
             )}
         </>

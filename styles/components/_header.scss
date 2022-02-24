@@ -28,6 +28,11 @@
 .c-header__mobile-contact {
     @include font-size(1.6);
     margin-right: auto;
+
+    &--isopen {
+        color: #ffffff;
+        z-index: 1000;
+    }
 }
 
 .c-header__logo-mobile {
@@ -152,10 +157,6 @@
     top: 0;
     left: 0;
     z-index: 100;
-
-    ul {
-        margin-top: auto;
-    }
 
     li {
         @include font-size(3);

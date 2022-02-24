@@ -2,16 +2,15 @@
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     gap: 0;
-    top: 100px;
+    top: 120px;
     position: relative;
-    height: 120px;
-    margin-bottom: 100px;
+    height: 180px;
+    margin-bottom: 120px;
 
     @include media('>=desktop') {
         top: 100px;
         position: relative;
         height: 380px;
-        margin-bottom: 100px;
     }
 }
 
@@ -23,7 +22,7 @@
     h1,
     span {
         @include font-montserrat-bold;
-        @include font-size(9.3);
+        @include font-size(16);
         display: inline-block;
         color: rgba(196, 196, 196, 0.2);
         text-transform: uppercase;
