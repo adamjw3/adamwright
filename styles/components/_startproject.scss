@@ -1,18 +1,9 @@
 .c-start-project {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    gap: 20px;
-    padding: 24px 0;
+    gap: 0 20px;
     background-color: #f7f7f7;
     position: relative;
-
-    @include media('>=tablet') {
-        padding: 40px 0;
-    }
-
-    @include media('>=desktop') {
-        padding: 140px 0;
-    }
 
     &:before {
         content: '';
@@ -27,6 +18,7 @@
 }
 
 .c-start-project__inner {
+    @include global-component-margins();
     grid-column: col-start 1 / span 10;
     z-index: 2;
 
@@ -36,13 +28,19 @@
 }
 
 .c-start-project__header {
-    margin-bottom: 20px;
+    margin-bottom: $unit-large;
+
+    @include media('>=desktop') {
+        margin-bottom: $unit-xlarge;
+    }
 }
 
 .c-start-project__intro {
-    @include font-size(1.4);
-    line-height: 140%;
-    margin-bottom: 20px;
+    margin-bottom: $unit-large;
+
+    @include media('>=desktop') {
+        margin-bottom: $unit-xlarge;
+    }
 }
 
 .c-start-project__btn {

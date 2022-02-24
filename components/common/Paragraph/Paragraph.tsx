@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface ParagraphProps {
     tag?: 'p' | 'span';
-    className: string;
+    className: 'para' | 'para-small' | 'para-large';
 }
 
 const Paragraph: React.FC<ParagraphProps> = ({ tag = 'p', className, children }) => {

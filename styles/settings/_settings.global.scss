@@ -53,13 +53,12 @@ $unit-xxlarge: $global-spacing-unit-xxlarge;
 // -----------------------------------------------------------------------------
 
 @mixin global-component-margins() {
-    display: inline-block;
     margin-bottom: $global-spacing-unit;
     margin-top: $global-spacing-unit;
     width: 100%;
 
     @include media('>=desktop') {
-        margin-bottom: $global-spacing-unit-large;
-        margin-top: $global-spacing-unit-large;
+        margin-bottom: $global-spacing-unit-xxlarge * 2;
+        margin-top: $global-spacing-unit-xxlarge * 2;
     }
 }

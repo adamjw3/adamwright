@@ -1,17 +1,17 @@
 .c-home-work {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    gap: 20px;
-    padding: 24px 0;
+    gap: 0 20px;
+    //padding: 24px 0;
     background-color: #f7f7f7;
     position: relative;
 
     @include media('>=tablet') {
-        padding: 40px 0;
+        //padding: 40px 0;
     }
 
     @include media('>=desktop') {
-        padding: 140px 0;
+        //padding: 140px 0;
     }
 
     &:before {
@@ -27,10 +27,11 @@
 }
 
 .c-home-work__inner {
+    @include global-component-margins();
     grid-column: col-start 1 / span 12;
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    gap: 20px;
+    gap: 0 20px;
     z-index: 2;
 
     @include media('>=desktop') {
@@ -40,25 +41,17 @@
 
 .c-home-work__header {
     grid-column: col-start 1 / span 12;
-    margin-bottom: 8px;
-
-    @include media('>=tablet') {
-        margin-bottom: 20px;
-    }
+    margin-bottom: $unit-large;
 
     @include media('>=desktop') {
         grid-column: col-start 1 / span 4;
-        margin-bottom: 48px;
+        margin-bottom: $unit-xlarge;
     }
 }
 
 .c-home-work__item-1 {
     grid-column: col-start 1 / span 12;
-    margin-bottom: 8px;
-
-    @include media('>=tablet') {
-        margin-bottom: 20px;
-    }
+    margin-bottom: $unit-large;
 
     @include media('>=tablet') {
         grid-column: col-start 1 / span 4;
@@ -87,4 +80,5 @@
     @include font-size(1.5);
     color: #029adb;
     grid-column: col-start 1 / span 12;
+    margin-top: $unit-large;
 }

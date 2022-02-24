@@ -42,9 +42,9 @@
 }
 
 // 2
-@mixin heading-xlarge() {
+@mixin heading-xxlarge() {
     @include font-montserrat;
-    @include font-size(3.6);
+    @include font-size(2.5);
     line-height: 120%;
 
     @include media('>tablet') {
@@ -53,6 +53,20 @@
 
     @include media('>=desktop') {
         @include font-size(6.4);
+    }
+}
+
+.heading-xxlarge {
+    @include heading-xxlarge;
+}
+
+@mixin heading-xlarge() {
+    @include font-montserrat;
+    @include font-size(3);
+    line-height: 120%;
+
+    @include media('>=desktop') {
+        @include font-size(4);
     }
 }
 
@@ -116,42 +130,6 @@
     @include para;
 }
 
-@mixin para-xlarge() {
-    line-height: 140%;
-    @include font-size(2);
-
-    @include media('>tablet') {
-        @include font-size(2.4);
-    }
-
-    @include media('>=desktop') {
-        @include font-size(3);
-    }
-}
-
-.para-xlarge {
-    @include para-xlarge;
-}
-
-// 6
-@mixin para-large() {
-    line-height: 140%;
-    @include font-size(1.6);
-
-    @include media('>tablet') {
-        @include font-size(1.8);
-    }
-
-    @include media('>=desktop') {
-        @include font-size(2);
-    }
-}
-
-.para-large {
-    @include para-large;
-}
-
-// 7
 @mixin para-small() {
     line-height: 140%;
     @include font-size(1.4);
@@ -167,4 +145,25 @@
 
 .para-small {
     @include para-small;
+}
+
+@mixin para-large() {
+    line-height: 140%;
+    @include font-size(1.8);
+
+    @include media('>tablet') {
+        @include font-size(1.8);
+    }
+
+    @include media('>=desktop') {
+        @include font-size(1.8);
+    }
+}
+
+.para-large {
+    @include para-large();
+}
+
+p strong {
+    @include font-montserrat-bold;
 }

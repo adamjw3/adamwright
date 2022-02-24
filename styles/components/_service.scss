@@ -1,0 +1,96 @@
+.c-service {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+    z-index: 100;
+    position: relative;
+}
+
+.c-service__inner {
+    margin-top: 0 !important;
+    grid-column: col-start 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: $unit-xlarge 0;
+
+    @include media('>=desktop') {
+        grid-column: col-start 2 / span 10;
+        gap: $unit-xlarge 60px;
+    }
+}
+
+.c-service__intro {
+    grid-column: col-start 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: $unit-xlarge 0;
+    padding-bottom: $unit-xxlarge;
+
+    @include media('>=desktop') {
+        gap: $unit-xlarge 60px;
+    }
+}
+
+.c-service__intro-column {
+    grid-column: span 12;
+
+    @include media('>=desktop') {
+        grid-column: span 6;
+    }
+}
+
+.c-service__content {
+    display: grid;
+    grid-column: span 12;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 0 20px;
+    position: relative;
+    background-color: #f7f7f7;
+
+    &:before {
+        content: '';
+        background-color: #f7f7f7;
+        height: 100%;
+        width: calc(100vw);
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        z-index: 1;
+    }
+}
+
+.c-service__content-inner {
+    @include global-component-margins();
+    grid-column: col-start 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: $unit-xlarge 0;
+    position: relative;
+    z-index: 1;
+
+    @include media('>=desktop') {
+        grid-column: col-start 2 / span 10;
+        gap: $unit-xlarge 60px;
+    }
+}
+
+.c-service__content-column {
+    grid-column: span 12;
+
+    @include media('>=desktop') {
+        grid-column: span 6;
+    }
+}
+
+.c-service__content-column-2 {
+    h2,
+    h3,
+    h4,
+    p {
+        margin-bottom: $unit-large;
+    }
+}
+
+.c-service__content-image {
+    display: block;
+}

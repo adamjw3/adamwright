@@ -1,13 +1,13 @@
 .c-tech {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    gap: 20px;
-    padding: 24px 0 70px 0;
+    gap: 0 20px;
+    padding-bottom: 130px;
     position: relative;
     background-color: #000000;
 
     @include media('>=desktop') {
-        padding: 80px 0 200px 0;
+        padding-bottom: 130px;
     }
 
     &:before {
@@ -23,10 +23,11 @@
 }
 
 .c-tech__inner {
+    @include global-component-margins();
     grid-column: col-start 1 / span 12;
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    gap: 20px;
+    gap: 0 20px;
     z-index: 2;
 
     @include media('>=desktop') {
@@ -36,10 +37,12 @@
 
 .c-tech__header {
     grid-column: col-start 1 / span 10;
+    margin-bottom: $unit-large;
     color: #ffffff;
 
     @include media('>=desktop') {
         grid-column: col-start 1 / span 4;
+        margin-bottom: $unit-xlarge;
     }
 }
 
@@ -47,12 +50,12 @@
     @include font-size(1.4);
     line-height: 140%;
     grid-column: col-start 1 / span 10;
-    margin-bottom: 40px;
+    margin-bottom: $unit-small;
     color: #ffffff;
 
     @include media('>=desktop') {
         grid-column: col-start 1 / span 4;
-        margin-bottom: 48px;
+        margin-bottom: $unit-xlarge;
     }
 }
 
@@ -60,32 +63,21 @@
     grid-column: col-start 1 / span 12;
     width: 100vw;
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
     left: -2rem;
 
     @include media('>=desktop') {
-        bottom: 80px;
+        bottom: 50px;
     }
 }
 
 .c-tech__items {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
 .c-tech__item {
-    flex-basis: 5%;
-    padding-bottom: 0;
-    padding-right: 2rem;
-
-    @include media('>=desktop') {
-        flex-basis: 10%;
-        padding-right: 7rem;
-    }
-
-    img {
-        width: 100%;
-    }
+    display: flex;
+    margin-right: $unit;
+    align-items: center;
+    height: 130px;
 }

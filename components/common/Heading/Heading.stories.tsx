@@ -18,10 +18,13 @@ export const WithControls = Template.bind({});
 
 export const AllHedings: React.FC = () => (
     <>
+        <Heading tag="h2" className="heading-xxlarge">
+            This is a Heading Xlarge
+        </Heading>
         <Heading tag="h2" className="heading-xlarge">
             This is a Heading Xlarge
         </Heading>
-        <Heading tag="h2" className="heading-large ">
+        <Heading tag="h2" className="heading-large">
             This is a Heading Large
         </Heading>
         <Heading tag="h3" className="heading-small">

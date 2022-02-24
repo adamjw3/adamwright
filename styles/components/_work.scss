@@ -2,15 +2,100 @@
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     gap: 20px;
+    z-index: 100;
+    position: relative;
 }
 
 .c-work__inner {
+    @include global-component-margins();
+    margin-top: 0 !important;
     grid-column: col-start 1 / span 12;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(12, [col-start] 1fr);
     gap: 20px;
 
     @include media('>=desktop') {
-        grid-column: col-start 2 / span 12;
+        grid-column: col-start 2 / span 10;
     }
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: 0; /* gutter size offset */
+    width: 100%;
+
+    @include media('>=desktop') {
+        margin-left: -60px; /* gutter size offset */
+        width: calc(100% + 60px);
+    }
+}
+.my-masonry-grid_column {
+    padding-left: 0; /* gutter size */
+    background-clip: padding-box;
+
+    @include media('>=desktop') {
+        padding-left: 60px; /* gutter size */
+    }
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+    margin-bottom: 60px;
+}
+
+.c-work__item {
+    grid-column: span 12;
+    @include media('>=desktop') {
+        grid-column: span 6;
+    }
+}
+
+.c-work__link {
+    display: block;
+    position: relative;
+
+    &:hover {
+        .c-work__content {
+            padding: $unit-xsmall $unit-xsmall 0 $unit-xsmall;
+
+            @include media('>=desktop') {
+                padding: $unit $unit 0 $unit;
+            }
+        }
+        .c-work__body {
+            max-height: 400px;
+            padding: $unit 0 $unit 0;
+            opacity: 1;
+        }
+    }
+}
+
+.c-work__image {
+    width: 100%;
+}
+
+.c-work__content {
+    background-color: white;
+    padding-top: $unit-xsmall;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+
+    @include media('>=desktop') {
+        padding-top: $unit;
+    }
+}
+
+.c-work__title {
+}
+
+.c-work__body {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }

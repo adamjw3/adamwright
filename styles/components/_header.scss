@@ -1,6 +1,9 @@
 .c-header__container {
     grid-column: bleed-start / bleed-end;
     border-top: 8px solid #000000;
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
 
     @include media('>=desktop') {
         border-top: 12px solid #000000;

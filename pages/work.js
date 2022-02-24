@@ -14,7 +14,7 @@ export default function work() {
             <NextSeo title="About page" />
             <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent">
                 <motion.div variants={fade}>
-                    <SectionHeader scrollText="Insights" title="Helping brilliant brands and organisations be more effective online." />
+                    <SectionHeader scrollText="WORK" title="Helping brilliant brands and organisations be more effective online." />
                     <Work />
                     <Tech />
                     <StartProject />

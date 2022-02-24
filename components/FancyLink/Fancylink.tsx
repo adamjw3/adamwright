@@ -8,7 +8,7 @@ export interface FancyLinkProps {
     children: React.ReactNode;
 }
 
-const FancyLink: React.FC<FancyLinkProps> = ({ destination, a11yText, extraClasses, children }) => {
+const FancyLink: React.FC<FancyLinkProps> = ({ destination, a11yText, extraClasses = '', children }) => {
     return (
         <Link href={destination}>
             <a aria-label={a11yText} className={`${extraClasses}`}>
