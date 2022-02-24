@@ -39,7 +39,6 @@ const TickerSlider: React.FC<TickerSliderProps> = ({ className, tickerSpeed, rig
     return (
         <Flickity
             options={flickityOptions}
-            className="c-ticker-slider"
             flickityRef={(carouselRef) => {
                 flkty.current = carouselRef;
             }}
