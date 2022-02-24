@@ -12,9 +12,9 @@ const Article: React.FC = () => {
                 </p>
                 <h3>Heading 3</h3>
                 <p>
-                    <a href="/">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit. In mollis sollicitudin tortor in dictum. Aliquam erat volutpat. Aliquam sed ante ac erat efficitur
-                    ultricies a sed erat. Ut vitae eleifend nunc. Donec semper vulputate nibh non molestie. Etiam sed venenatis leo. Quisque leo neque, mollis ut scelerisque ut, pulvinar eget dolor.
-                    Curabitur posuere fermentum justo, in facilisis mi commodo nec. In hac habitasse platea dictumst.
+                    <a href="">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit. In mollis sollicitudin tortor in dictum. Aliquam erat volutpat. Aliquam sed ante ac erat efficitur ultricies
+                    a sed erat. Ut vitae eleifend nunc. Donec semper vulputate nibh non molestie. Etiam sed venenatis leo. Quisque leo neque, mollis ut scelerisque ut, pulvinar eget dolor. Curabitur
+                    posuere fermentum justo, in facilisis mi commodo nec. In hac habitasse platea dictumst.
                 </p>
                 <img src="/images/webdesign.jpg" alt="" />
                 <ol>
