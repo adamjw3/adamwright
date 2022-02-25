@@ -8,9 +8,6 @@ const Banner: React.FC = () => {
         <div className="c-banner">
             <div className="c-banner__grid">
                 <div className="c-banner__inner">
-                    <div className="c-banner__image-mobile">
-                        <img src="/images/me.svg" alt="" />
-                    </div>
                     <header>
                         <div className="c-banner__header">
                             <Heading tag="h1" className="heading-xxlarge">
@@ -23,10 +20,13 @@ const Banner: React.FC = () => {
                                 running your business.
                             </Paragraph>
                         </div>
+                        <FancyLink destination="/contact" a11yText="text" extraClasses="c-banner__btn c-btn">
+                            Find out more
+                        </FancyLink>
                     </header>
-                    <FancyLink destination="/contact" a11yText="text" extraClasses="c-banner__btn c-btn">
-                        Find out more
-                    </FancyLink>
+                    <div className="c-banner__image-mobile">
+                        <img src="/images/bgmobile.png" alt="" />
+                    </div>
                     <div className="c-banner__links">
                         <ul>
                             <li>
