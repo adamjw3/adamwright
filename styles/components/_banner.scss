@@ -1,15 +1,21 @@
 .c-banner {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    @include media('>=desktop') {
+        min-height: 750px;
+    }
+}
+
+.c-banner__grid {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
     gap: 20px;
     align-items: center;
     height: 100vh;
-    position: relative;
-    overflow: hidden;
 
     @include media('>=desktop') {
-        top: 0;
-        align-items: center;
         min-height: 750px;
     }
 }
@@ -145,7 +151,12 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 0;
+        right: -3rem;
+        width: 45%;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
