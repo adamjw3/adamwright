@@ -1,10 +1,10 @@
 .c-btn {
     @include font-montserrat-semibold;
     @include font-size(1.6);
-    background-color: transparent;
+    background-color: #029adb;
     border: solid 2px #0285bd;
     border-radius: 9999px;
-    color: #0285bd;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     height: 42px;
@@ -14,8 +14,8 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: #029adb;
-        color: #ffffff;
+        background-color: transparent;
+        color: #0285bd;
     }
 
     // 1
