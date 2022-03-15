@@ -5,12 +5,12 @@ const Mobile = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const OnNavigateClick = () => {
-        setIsMenuOpen(!isMenuOpen);
-
         if (!isMenuOpen) {
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+            setIsMenuOpen(false);
         } else {
             document.getElementsByTagName('body')[0].style.overflow = 'auto';
+            setIsMenuOpen(true);
         }
     };
 
@@ -25,7 +25,7 @@ const Mobile = () => {
                 Contact
             </FancyLink>
             <FancyLink destination="/" a11yText="Home" extraClasses="c-header__logo-mobile">
-                <svg width="98" height="89" viewBox="0 0 98 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 98 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g>
                         <rect width="98" height="89" fill="black" />
                     </g>

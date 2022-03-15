@@ -27,8 +27,8 @@
     width: 100%;
 
     @include media('>=desktop') {
-        margin-left: -60px; /* gutter size offset */
-        width: calc(100% + 60px);
+        margin-left: -20px; /* gutter size offset */
+        width: calc(100% + 20px);
     }
 }
 .my-masonry-grid_column {
@@ -36,7 +36,7 @@
     background-clip: padding-box;
 
     @include media('>=desktop') {
-        padding-left: 60px; /* gutter size */
+        padding-left: 20px; /* gutter size */
     }
 }
 
@@ -47,6 +47,7 @@
 
 .c-work__item {
     grid-column: span 12;
+
     @include media('>=desktop') {
         grid-column: span 6;
     }

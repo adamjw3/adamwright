@@ -13,9 +13,13 @@ export default function Home() {
     return (
         <Layout>
             <NextSeo title="Home page" />
-            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent ">
+            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-full-bleed">
                 <motion.div variants={fade}>
                     <Banner />
+                </motion.div>
+            </motion.div>
+            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent">
+                <motion.div variants={fade}>
                     <HomeWork />
                     <HomeServices />
                     <Tech />

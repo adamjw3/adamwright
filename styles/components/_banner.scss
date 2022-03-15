@@ -1,8 +1,14 @@
 .c-banner {
     position: relative;
-    height: calc(100vh + 98px);
+    height: 100vh;
+
+    @include media('>=tablet') {
+        height: 50vh;
+        min-height: 520px;
+    }
 
     @include media('>=desktop') {
+        height: 100vh;
         min-height: 750px;
     }
 }
@@ -12,8 +18,12 @@
     grid-template-columns: repeat(12, [col-start] 1fr);
     gap: 20px;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     position: relative;
+
+    @include media('>=tablet') {
+        min-height: 520px;
+    }
 
     @include media('>=desktop') {
         min-height: 750px;
@@ -27,10 +37,18 @@
     text-align: center;
     align-items: center;
     z-index: 10;
+    gap: 20px;
+
+    @include media('>=tablet') {
+        grid-column: col-start 1 / span 12;
+        text-align: left;
+        padding: 0 20px;
+    }
 
     @include media('>=desktop') {
         grid-column: col-start 2 / span 6;
-        text-align: left;
+        gap: 0;
+        padding: 0;
     }
 
     header {
@@ -40,7 +58,7 @@
 
         @include media('>=tablet') {
             order: 1;
-            grid-column: span 7;
+            grid-column: col-start 1 / span 6;
             text-align: left;
         }
 
@@ -84,7 +102,11 @@
         display: block;
         position: absolute;
         bottom: 10rem;
-        width: 100%;
+        padding: 0 20px;
+    }
+
+    @include media('>=desktop') {
+        padding: 0;
     }
 
     ul {
@@ -136,8 +158,8 @@
     border: 2px solid #000000;
     border-radius: 99999px;
     position: absolute;
-    bottom: 8rem;
-    right: 0;
+    bottom: 10rem;
+    right: 20px;
     transform: rotateZ(90deg);
     transform-origin: top right;
     overflow: hidden;
@@ -165,7 +187,7 @@
     grid-column: span 12;
 
     @include media('>=tablet') {
-        grid-column: span 5;
+        grid-column: col-start 8 / span 5;
         order: 2;
         text-align: left;
     }
@@ -191,14 +213,16 @@
         display: block;
         position: absolute;
         top: 0;
-        right: -3rem;
+        right: 0;
         width: 45%;
+        height: 100%;
     }
 
     img {
         width: 100%;
-        min-height: 750px;
         height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
     }
 }
 

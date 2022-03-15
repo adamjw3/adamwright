@@ -37,6 +37,10 @@
     }
 }
 
+.l-grid-full-bleed {
+    grid-column: bleed-start / bleed-end;
+}
+
 .l-grid-maincontent {
     grid-column: main-start / main-end;
 }

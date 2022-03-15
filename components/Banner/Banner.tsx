@@ -11,13 +11,12 @@ const Banner: React.FC = () => {
                     <header>
                         <div className="c-banner__header">
                             <Heading tag="h1" className="heading-xxlarge">
-                                Web Design, Marketing, Ecommerce Agency
+                                Digital Agency from Birmingham
                             </Heading>
                         </div>
                         <div className="c-banner__intro">
                             <Paragraph tag="p" className="para-large">
-                                We are UK Shopify Experts from Manchester and we help independent brands like yours to level-up their Shopify and digital marketing expertise so you can focus on
-                                running your business.
+                                Working with companies to create beautiful, effective, and user-friendly websites.
                             </Paragraph>
                         </div>
                         <FancyLink destination="/contact" a11yText="text" extraClasses="c-banner__btn c-btn">
@@ -53,7 +52,7 @@ const Banner: React.FC = () => {
                     </div>
                     <div className="c-banner__scroller"></div>
                     <div className="c-banner__image-desktop">
-                        <img src="/images/bgdesktop.png" alt="" />
+                        <img src="/images/bgdesktop.svg" alt="" />
                     </div>
                 </div>
             </div>

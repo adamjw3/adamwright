@@ -52,7 +52,7 @@
     }
 
     @include media('>=desktop') {
-        @include font-size(6.4);
+        @include font-size(5.4);
     }
 }
 
