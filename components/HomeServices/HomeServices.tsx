@@ -67,7 +67,7 @@ const HomeServices: React.FC = () => {
                     <div className="c-home-services__item">
                         <div className="c-home-services__heading-webdesign">
                             <Heading tag="h3" className="heading">
-                                Copy Writings
+                                Copy Writing
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
