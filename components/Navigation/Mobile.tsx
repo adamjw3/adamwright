@@ -83,22 +83,22 @@ const Mobile = () => {
                 <nav className="c-header__mobile-nav">
                     <ul>
                         <li>
-                            <FancyLink destination="/work" a11yText="text" onClick={OnNavigateClick}>
+                            <FancyLink destination="/work" a11yText="text" onClick={() => OnNavigateClick}>
                                 Work
                             </FancyLink>
                         </li>
                         <li>
-                            <FancyLink destination="/services" a11yText="text" onClick={OnNavigateClick}>
+                            <FancyLink destination="/services" a11yText="text" onClick={() => OnNavigateClick}>
                                 Services
                             </FancyLink>
                         </li>
                         <li>
-                            <FancyLink destination="/about" a11yText="text" onClick={OnNavigateClick}>
+                            <FancyLink destination="/about" a11yText="text" onClick={() => OnNavigateClick}>
                                 About
                             </FancyLink>
                         </li>
                         <li>
-                            <FancyLink destination="/insights" a11yText="text" onClick={OnNavigateClick}>
+                            <FancyLink destination="/insights" a11yText="text" onClick={() => OnNavigateClick}>
                                 Insights
                             </FancyLink>
                         </li>
