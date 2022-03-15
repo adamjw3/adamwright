@@ -39,6 +39,10 @@
 .c-header__logo-mobile {
     z-index: 1000;
     width: 70px;
+
+    svg {
+        display: block;
+    }
 }
 
 .c-header__burger {
