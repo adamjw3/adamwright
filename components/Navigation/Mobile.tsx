@@ -7,10 +7,10 @@ const Mobile = () => {
     const OnNavigateClick = () => {
         if (!isMenuOpen) {
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-            setIsMenuOpen(false);
+            setIsMenuOpen(true);
         } else {
             document.getElementsByTagName('body')[0].style.overflow = 'auto';
-            setIsMenuOpen(true);
+            setIsMenuOpen(false);
         }
     };
 
