@@ -25,7 +25,7 @@ const Mobile = () => {
                 extraClasses={isMenuOpen ? 'c-header__mobile-contact c-header__mobile-contact--isopen' : 'c-header__mobile-contact'}
                 onClick={() => OnNavigateClick}
             >
-                Contacts
+                Contact
             </FancyLink>
             <FancyLink destination="/" a11yText="Home" extraClasses="c-header__logo-mobile">
                 <svg viewBox="0 0 98 89" fill="none" xmlns="http://www.w3.org/2000/svg">
