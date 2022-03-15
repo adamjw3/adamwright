@@ -23,7 +23,7 @@ const Mobile = () => {
                 destination="/contact"
                 a11yText="Contact"
                 extraClasses={isMenuOpen ? 'c-header__mobile-contact c-header__mobile-contact--isopen' : 'c-header__mobile-contact'}
-                onClick={OnNavigateClick}
+                onClick={() => OnNavigateClick}
             >
                 Contact
             </FancyLink>
