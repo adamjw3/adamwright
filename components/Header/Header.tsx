@@ -17,7 +17,7 @@ function Header() {
             </div>
             {onShowDesktopMenu && (
                 <>
-                    <div className="c-header__emailus">
+                    <div className="c-header__emailus" data-scroll>
                         <strong>Email us</strong>
                         <FancyLink a11yText="email us hello@adamwright.dev" destination="mailto:hello@adamwright.dev">
                             hello@adamwright.dev

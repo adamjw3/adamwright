@@ -188,16 +188,19 @@
 .c-header__emailus {
     @include font-size(1.6);
     position: fixed;
-    left: 2rem;
-    bottom: 0;
-    width: 100vh;
-    text-align: center;
+    left: -50%;
+    top: 50%;
     z-index: 1000;
-    transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg) translate(-50%, 0);
     transform-origin: top left;
     background-color: transparent;
     backface-visibility: hidden;
     mix-blend-mode: difference;
+    transition: left 1s ease-in-out;
+
+    &.is-inview {
+        left: 2rem;
+    }
 
     strong {
         @include font-montserrat-bold;

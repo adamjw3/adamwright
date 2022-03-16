@@ -2,14 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import FancyLink from '../FancyLink';
 import Heading from '../common/Heading';
+import SplitText from '../SplitText';
 
 const HomeWork: React.FC = () => {
     return (
         <div className="c-home-work">
             <div className="c-home-work__inner">
-                <div className="c-home-work__header">
+                <div className="c-home-work__header" data-scroll>
                     <Heading tag="h2" className="heading-large">
-                        Weve helped brilliant brands and organisations be more effective online.
+                        <SplitText words="Weve helped brilliant brands and organisations be more effective online." />
                     </Heading>
                 </div>
                 <div className="c-home-work__item-1">

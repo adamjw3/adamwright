@@ -1591,6 +1591,14 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
+"@moxy/react-split-text@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@moxy/react-split-text/-/react-split-text-1.0.1.tgz#aaf3fe46f971fce16d3a240f793e3c4ecda71ffe"
+  integrity sha512-IxvsveUTWY4X+ElxDzW8dj+dQSkwwZrYgWR6b9y584yW/f13Av83RwOC263mH/Cul9+Tv07PUNuhFXoMPN8dMA==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4377,6 +4385,11 @@ classnames@2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
+classnames@^2.2.6:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@^4.2.3:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.4.tgz#733bf46eba4e607c6891ea57c24a989356831178"
@@ -4994,6 +5007,11 @@ des.js@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
+
+desandro-matches-selector@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
+  integrity sha1-cXvu1NwT59jzdi9wem1YpndCGOE=
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -5668,7 +5686,7 @@ etag@1.8.1, etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-ev-emitter@^1.0.0:
+ev-emitter@^1.0.0, ev-emitter@^1.0.1, ev-emitter@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
   integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
@@ -5988,6 +6006,13 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
+fizzy-ui-utils@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
+  integrity sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+
 flat-cache@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-3.0.4.tgz#61b0338302b2fe9f957dcc32fc2a87f1c3048b11"
@@ -6000,6 +6025,18 @@ flatted@^3.1.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.2.tgz#64bfed5cb68fe3ca78b3eb214ad97b63bedce561"
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
+
+flickity@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.3.0.tgz#6763eb4d9cfeee6eedd96d042a21fff4ad439944"
+  integrity sha512-x4cJBVywsaCWmId3I6wvBYJtWk3gcr+gz8UJQ48P57W5G7ER5OUgc3GUK0rtTrbMy/HYB9wL6u+I7EC4qrLO8g==
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+    ev-emitter "^1.1.1"
+    fizzy-ui-utils "^2.0.7"
+    get-size "^2.0.3"
+    unidragger "^2.4.0"
+    unipointer "^2.4.0"
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -6279,6 +6316,11 @@ get-package-type@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/get-package-type/-/get-package-type-0.1.0.tgz#8de2d803cff44df3bc6c456e6668b36c3926e11a"
   integrity sha512-pjzuKtY64GYfWizNAJ0fr9VqttZkNiK2iS430LtIHzjBEr6bX8Am2zm4sW4Ro5wjWW5cAlRL1qAMTcXbjNAO2Q==
+
+get-size@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
+  integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
 
 get-stream@^4.0.0:
   version "4.1.0"
@@ -7686,10 +7728,10 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-locomotive-scroll@^4.1.2:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/locomotive-scroll/-/locomotive-scroll-4.1.3.tgz#721e87d68dff37257d384b18c5f1dcfbf62f3664"
-  integrity sha512-1b9JAea6IevKCAuBtuyufUogEwhQtKHrClxj+599dLN7Xit1/6CM/X9haveXRCjgfD9RcPKfptasY4kvLGHNdA==
+locomotive-scroll@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/locomotive-scroll/-/locomotive-scroll-4.1.4.tgz#a6d83ba3c07a9c51fc1a6d95b4be614d4dc5aad2"
+  integrity sha512-6i98cFF2SKg6wIPpwVPuo2FG8qL3USsdDeew78TEYZyLoqleMWNfkSDpWA6mPym4dOfTIBXc678VmGlkgx3fTA==
   dependencies:
     bezier-easing "^2.1.0"
     smoothscroll-polyfill "^0.4.4"
@@ -9523,6 +9565,11 @@ react-marquee-slider@^1.1.5:
   resolved "https://registry.yarnpkg.com/react-marquee-slider/-/react-marquee-slider-1.1.5.tgz#5dc34c259071e513eb7c4084c405823233b28bb9"
   integrity sha512-eta0DSKMu8F+82O3zF4jlWdTTlsmJg3h8n12trqCndBYo5DAc07odVlfxSfSsEGcBEHYli12RehrK3EYc4LwrQ==
 
+react-masonry-css@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/react-masonry-css/-/react-masonry-css-1.0.16.tgz#72b28b4ae3484e250534700860597553a10f1a2c"
+  integrity sha512-KSW0hR2VQmltt/qAa3eXOctQDyOu7+ZBevtKgpNDSzT7k5LA/0XntNa9z9HKCdz3QlxmJHglTZ18e4sX4V8zZQ==
+
 react-popper-tooltip@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/react-popper-tooltip/-/react-popper-tooltip-3.1.1.tgz#329569eb7b287008f04fcbddb6370452ad3f9eac"
@@ -11199,6 +11246,13 @@ unicode-property-aliases-ecmascript@^2.0.0:
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.0.0.tgz#0a36cb9a585c4f6abd51ad1deddb285c165297c8"
   integrity sha512-5Zfuy9q/DFr4tfO7ZPeVXb1aPoeQSdeFMLpYuFebehDAhbuevLs5yxSZmIFN1tP5F9Wl4IpJrYojg85/zgyZHQ==
 
+unidragger@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.4.0.tgz#4cd7e564317af0ef42632d5984a82d4ae6314d8d"
+  integrity sha512-MueZK2oXuGE6OAlGKIrSXK2zCq+8yb1QUZgqyTDCSJzvwYL0g2Llrad+TtoQTYxtFnNyxxSw0IMnKNIgEMia1w==
+  dependencies:
+    unipointer "^2.4.0"
+
 unified@9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/unified/-/unified-9.2.0.tgz#67a62c627c40589edebbf60f53edfd4d822027f8"
@@ -11220,6 +11274,13 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^2.0.1"
+
+unipointer@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.4.0.tgz#ac7316aff6170ff87a4b008e55e842fb4bf13181"
+  integrity sha512-VjzDLPjGK7aYpQKH7bnDZS8X4axF5AFU/LQi+NQe1oyEHfaz6lWKhaQ7n4o7vJ1iJ4i2T0quCIfrQM139p05Sw==
+  dependencies:
+    ev-emitter "^1.0.1"
 
 unique-filename@^1.1.1:
   version "1.1.1"

@@ -1,0 +1,16 @@
+.c-split-text {
+    display: inline-block;
+    overflow: hidden;
+}
+.c-split-text__word {
+    display: inline-block;
+    position: relative;
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out;
+}
+
+div.is-inview {
+    .c-split-text__word {
+        transform: translateY(0);
+    }
+}
