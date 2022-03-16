@@ -33,7 +33,7 @@
 .c-banner__inner {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
-    grid-column: col-start 1 / span 12;
+    grid-column: col-start 2 / span 10;
     text-align: center;
     align-items: center;
     z-index: 10;
