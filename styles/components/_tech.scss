@@ -65,6 +65,7 @@
     position: absolute;
     bottom: 0;
     left: -2rem;
+    display: none;
 
     @include media('>=desktop') {
         bottom: 50px;
