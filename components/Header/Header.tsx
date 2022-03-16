@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <>
-            <div className={`c-header__container ${onStickyNav ? 'is-sticky' : ''}`} data-scroll-section>
+            <div className={`c-header__container ${onStickyNav ? 'is-sticky' : ''}`}>
                 <div className="l-grid">
                     <div className="c-header__inner">{onShowDesktopMenu ? <Desktop /> : <Mobile />}</div>
                 </div>

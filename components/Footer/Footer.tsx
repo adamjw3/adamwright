@@ -3,7 +3,7 @@ import FancyLink from '../FancyLink';
 
 const Footer: React.FC = () => {
     return (
-        <div className="c-footer" data-scroll-section>
+        <div className="c-footer">
             <div className="l-grid">
                 <div className="l-grid c-footerinner">
                     <div className="c-footer__col1">
