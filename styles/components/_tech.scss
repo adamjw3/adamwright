@@ -5,7 +5,6 @@
     padding-bottom: 130px;
     position: relative;
     background-color: #000000;
-    display: none;
 
     @include media('>=desktop') {
         padding-bottom: 130px;
@@ -66,6 +65,7 @@
     position: absolute;
     bottom: 0;
     left: -2rem;
+    display: none;
 
     @include media('>=desktop') {
         bottom: 50px;
