@@ -60,6 +60,7 @@
 }
 
 .c-tech__items-container {
+    grid-column: col-start 1 / span 12;
     width: 100vw;
     position: absolute;
     bottom: 0;

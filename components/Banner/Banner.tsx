@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
                     <header>
                         <div className="c-banner__header" data-scroll>
                             <Heading tag="h1" className="heading-xxlarge">
-                                <SplitText words="Digital Agency from Birmingham" />
+                                <SplitText words="Digital Freelancer from Birmingham" />
                             </Heading>
                         </div>
                         <div className="c-banner__intro" data-scroll>
