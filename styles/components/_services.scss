@@ -17,7 +17,7 @@
 
     @include media('>=desktop') {
         grid-column: col-start 2 / span 10;
-        gap: $unit-xlarge 60px;
+        gap: $unit-xlarge 20px;
     }
 }
 

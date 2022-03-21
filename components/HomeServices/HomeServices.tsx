@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import useDesktop from '../../hooks/useDesktop';
+import React from 'react';
 import Heading from '../common/Heading';
 import Paragraph from '../common/Paragraph';
 import FancyLink from '../FancyLink';
@@ -21,7 +20,7 @@ const HomeServices: React.FC = () => {
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
-                            Bespoke web design perfect for your brand and target audience.
+                            I live to build websites which look good, perform seamlessly and deliver clear commercial benefits.
                         </Paragraph>
                     </div>
                     <div className="c-home-services__item">
@@ -31,7 +30,7 @@ const HomeServices: React.FC = () => {
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
-                            Bespoke web design perfect for your brand and target audience.
+                            Be it Email marketing or Pay-Per-Click advertising, I will do whats best to drive traffic to your website.
                         </Paragraph>
                     </div>
                     <div className="c-home-services__item">
@@ -41,7 +40,7 @@ const HomeServices: React.FC = () => {
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
-                            Bespoke web design perfect for your brand and target audience.
+                            Want to Sell products online? I can get you up and running in days using Shopify or Swell.
                         </Paragraph>
                     </div>
                     <div className="c-home-services__item">
@@ -51,7 +50,7 @@ const HomeServices: React.FC = () => {
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
-                            Bespoke web design perfect for your brand and target audience.
+                            A support plan will help keep your online presence performing well.
                         </Paragraph>
                     </div>
                     <div className="c-home-services__item">
@@ -61,7 +60,7 @@ const HomeServices: React.FC = () => {
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
-                            Bespoke web design perfect for your brand and target audience.
+                            I can help increazse the visibilty of your webite in seach engines like Google. No gimmics just pure organic growth.
                         </Paragraph>
                     </div>
                     <div className="c-home-services__item">
@@ -71,7 +70,7 @@ const HomeServices: React.FC = () => {
                             </Heading>
                         </div>
                         <Paragraph tag="p" className="para-small">
-                            Bespoke web design perfect for your brand and target audience.
+                            Not sure how to engage with your customers? Let me build a voice for your brand.
                         </Paragraph>
                     </div>
                 </div>

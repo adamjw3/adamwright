@@ -82,3 +82,18 @@
     grid-column: col-start 1 / span 12;
     margin-top: $unit-large;
 }
+
+.c-home-work__image {
+    display: block;
+    overflow: hidden;
+
+    img {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}

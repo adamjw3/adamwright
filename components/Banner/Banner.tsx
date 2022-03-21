@@ -2,7 +2,6 @@ import React from 'react';
 import FancyLink from '../FancyLink';
 import Heading from '../common/Heading';
 import Paragraph from '../common/Paragraph';
-import SplitText from '../SplitText';
 
 const Banner: React.FC = () => {
     return (
@@ -12,12 +11,12 @@ const Banner: React.FC = () => {
                     <header>
                         <div className="c-banner__header" data-scroll>
                             <Heading tag="h1" className="heading-xxlarge">
-                                <SplitText words="Digital Freelancer from Birmingham" />
+                                Digital Freelancer from Birmingham
                             </Heading>
                         </div>
                         <div className="c-banner__intro" data-scroll>
                             <Paragraph tag="p" className="para-large">
-                                <SplitText words="Working with companies to create beautiful, effective, and user-friendly websites." />
+                                Working with companies to create beautiful, effective, and user-friendly websites.
                             </Paragraph>
                         </div>
                         <div className="c-banner__btn-wrapper" data-scroll>

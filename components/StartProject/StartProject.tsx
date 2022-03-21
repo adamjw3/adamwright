@@ -10,17 +10,16 @@ const StartProject: React.FC = () => {
                 <header>
                     <div className="c-start-project__header">
                         <Heading tag="h2" className="heading-xlarge">
-                            Lets make something great toegther.
+                            Ready when you are!
                         </Heading>
                     </div>
                     <div className="c-start-project__intro">
                         <Paragraph tag="p" className="para-small">
-                            We are UK Shopify Experts from Manchester and we help independent brands like yours to level-up their Shopify and digital marketing expertise so you can focus on running
-                            your business.
+                            I take on all types of projects from new to existing brands, maintaining current sites or producing something new.
                         </Paragraph>
                     </div>
                     <FancyLink destination="/" a11yText="text" extraClasses="c-start-project__btn c-btn">
-                        Start a projects
+                        Start a project
                     </FancyLink>
                 </header>
             </div>

@@ -9,14 +9,8 @@ const Tech: React.FC = () => {
             <div className="c-tech__inner">
                 <div className="c-tech__header">
                     <Heading tag="h2" className="heading-large">
-                        Expertise that can help you design and build a website you’re proud of.
+                        We use the latest technologies available to create timeless designs.
                     </Heading>
-                </div>
-                <div className="c-tech__intro">
-                    <Paragraph tag="p" className="para">
-                        We are UK Shopify Experts from Manchester and we help independent brands like yours to level-up their Shopify and digital marketing expertise so you can focus on running your
-                        business.
-                    </Paragraph>
                 </div>
                 <div className="c-tech__items-container">
                     <TickerSlider tickerSpeed={1} rightToLeft={true}>
