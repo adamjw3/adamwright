@@ -52,6 +52,9 @@
 .c-home-work__item-1 {
     grid-column: col-start 1 / span 12;
     margin-bottom: $unit-large;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
 
     @include media('>=tablet') {
         grid-column: col-start 1 / span 5;
@@ -61,10 +64,18 @@
     img {
         width: 100%;
     }
+
+    &.is-inview {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .c-home-work__item-2 {
     grid-column: col-start 1 / span 12;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
 
     @include media('>=tablet') {
         grid-column: col-start 6 / span 6;
@@ -72,6 +83,11 @@
 
     img {
         width: 100%;
+    }
+
+    &.is-inview {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 

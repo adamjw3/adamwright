@@ -43,5 +43,16 @@
     }
 }
 
+.c-start-project__btn-wrapper {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
+
+    &.is-inview {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .c-start-project__btn {
 }

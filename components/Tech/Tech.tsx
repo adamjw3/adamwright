@@ -2,6 +2,7 @@ import React from 'react';
 import Heading from '../common/Heading';
 import Paragraph from '../common/Paragraph';
 import TickerSlider from '../TickerSlider';
+import SplitText from '../SplitText';
 
 const Tech: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ const Tech: React.FC = () => {
             <div className="c-tech__inner">
                 <div className="c-tech__header">
                     <Heading tag="h2" className="heading-large">
-                        We use the latest technologies available to create timeless designs.
+                        <SplitText words="We use the latest technologies available to create timeless designs." />
                     </Heading>
                 </div>
                 <div className="c-tech__items-container">
