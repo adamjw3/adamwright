@@ -9,7 +9,7 @@ const SplitText = ({ words }) => {
                     <span key={index} className="c-split-text">
                         <InView triggerOnce={true}>
                             {({ inView, ref, entry }) => (
-                                <span ref={ref} className={inView ? 'c-split-text__word is-inview' : 'c-split-text__word'} style={{ transitionDelay: `${index / 8}s` }}>
+                                <span ref={ref} className={inView ? 'c-split-text__word is-inview' : 'c-split-text__word'} style={{ transitionDelay: `${index / 8}ms` }}>
                                     {item}&nbsp;
                                 </span>
                             )}
