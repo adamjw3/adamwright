@@ -1,4 +1,5 @@
 import React from 'react';
+import { InView } from 'react-intersection-observer';
 import { Desktop, Mobile } from '../Navigation';
 import FancyLink from '../FancyLink';
 import useDesktop from '../../hooks/useDesktop';
@@ -16,14 +17,16 @@ function Header() {
                 </div>
             </div>
             {onShowDesktopMenu && (
-                <>
-                    <div className="c-header__emailus" data-scroll>
-                        <strong>Email us</strong>
-                        <FancyLink a11yText="email us hello@adamwright.dev" destination="mailto:hello@adamwright.dev">
-                            hello@adamwright.dev
-                        </FancyLink>
-                    </div>
-                </>
+                <InView triggerOnce={true}>
+                    {({ inView, ref, entry }) => (
+                        <div className={inView ? 'c-header__emailus is-inview' : 'c-header__emailus'} ref={ref}>
+                            <strong>Email us</strong>
+                            <FancyLink a11yText="email us hello@adamwright.dev" destination="mailto:hello@adamwright.dev">
+                                hello@adamwright.dev
+                            </FancyLink>
+                        </div>
+                    )}
+                </InView>
             )}
         </>
     );

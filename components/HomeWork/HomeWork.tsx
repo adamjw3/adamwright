@@ -10,7 +10,7 @@ const HomeWork: React.FC = () => {
             <div className="c-home-work__inner">
                 <div className="c-home-work__header" data-scroll>
                     <Heading tag="h2" className="heading-large">
-                        We&lsquo;ve helped brilliant brands and organisations be more effective online.
+                        <SplitText words="We&lsquo;ve helped brilliant brands and organisations be more effective online." />
                     </Heading>
                 </div>
                 <div className="c-home-work__item-1">

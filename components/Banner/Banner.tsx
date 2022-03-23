@@ -2,6 +2,8 @@ import React from 'react';
 import FancyLink from '../FancyLink';
 import Heading from '../common/Heading';
 import Paragraph from '../common/Paragraph';
+import SplitText from '../SplitText';
+import { InView } from 'react-intersection-observer';
 
 const Banner: React.FC = () => {
     return (
@@ -9,21 +11,25 @@ const Banner: React.FC = () => {
             <div className="c-banner__grid">
                 <div className="c-banner__inner">
                     <header>
-                        <div className="c-banner__header" data-scroll>
+                        <div className="c-banner__header">
                             <Heading tag="h1" className="heading-xxlarge">
-                                Digital Freelancer from Birmingham
+                                <SplitText words="Digital Freelancer from Birmingham" />
                             </Heading>
                         </div>
-                        <div className="c-banner__intro" data-scroll>
+                        <div className="c-banner__intro">
                             <Paragraph tag="p" className="para-large">
-                                Working with companies to create beautiful, effective, and user-friendly websites.
+                                <SplitText words="Working with companies to create beautiful, effective, and user-friendly websites." />
                             </Paragraph>
                         </div>
-                        <div className="c-banner__btn-wrapper" data-scroll>
-                            <FancyLink destination="/contact" a11yText="text" extraClasses="c-banner__btn c-btn">
-                                Find out more
-                            </FancyLink>
-                        </div>
+                        <InView triggerOnce={true}>
+                            {({ inView, ref, entry }) => (
+                                <div className={inView ? 'c-banner__btn-wrapper is-inview' : 'c-banner__btn-wrapper'} ref={ref}>
+                                    <FancyLink destination="/contact" a11yText="text" extraClasses="c-banner__btn c-btn">
+                                        Find out more
+                                    </FancyLink>
+                                </div>
+                            )}
+                        </InView>
                     </header>
                     <div className="c-banner__image-mobile">
                         <img src="/images/bgmobile.png" alt="" />
@@ -32,22 +38,22 @@ const Banner: React.FC = () => {
                         <ul>
                             <li>
                                 <FancyLink destination="/contact" a11yText="text">
-                                    Design.
+                                    <SplitText words="Design." />
                                 </FancyLink>
                             </li>
                             <li>
                                 <FancyLink destination="/contact" a11yText="text">
-                                    Ecommerce.
+                                    <SplitText words="Ecommerce." />
                                 </FancyLink>
                             </li>
                             <li>
                                 <FancyLink destination="/contact" a11yText="text">
-                                    Marketing.
+                                    <SplitText words="Marketing." />
                                 </FancyLink>
                             </li>
                             <li>
                                 <FancyLink destination="/contact" a11yText="text">
-                                    Support.
+                                    <SplitText words="Support." />
                                 </FancyLink>
                             </li>
                         </ul>
