@@ -12,14 +12,12 @@ export default function article() {
     return (
         <Layout>
             <NextSeo title="Web Design" />
-            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent">
-                <motion.div variants={fade}>
-                    <SectionHeader scrollText="Web Design" title="A digital marketing agency with the following expertise. " />
-                    <Article />
-                    <Tech />
-                    <StartProject />
-                </motion.div>
-            </motion.div>
+            <div className="l-grid-maincontent">
+                <SectionHeader scrollText="Web Design" title="A digital marketing agency with the following expertise. " />
+                <Article />
+                <Tech />
+                <StartProject />
+            </div>
         </Layout>
     );
 }

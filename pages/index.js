@@ -13,19 +13,17 @@ export default function Home() {
     return (
         <Layout>
             <NextSeo title="Home page" />
-            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-full-bleed">
-                <motion.div variants={fade}>
-                    <Banner />
-                    <div className="l-grid">
-                        <div className="l-grid-maincontent">
-                            <HomeWork />
-                            <HomeServices />
-                            <Tech />
-                            <StartProject />
-                        </div>
+            <div className="l-grid-full-bleed">
+                <Banner />
+                <div className="l-grid">
+                    <div className="l-grid-maincontent">
+                        <HomeWork />
+                        <HomeServices />
+                        <Tech />
+                        <StartProject />
                     </div>
-                </motion.div>
-            </motion.div>
+                </div>
+            </div>
         </Layout>
     );
 }

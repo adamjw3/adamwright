@@ -11,13 +11,11 @@ export default function about() {
     return (
         <Layout>
             <NextSeo title="About" />
-            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent">
-                <motion.div variants={fade}>
-                    <SectionHeader scrollText="About" title="Good design makes life better." />
-                    <Tech />
-                    <StartProject />
-                </motion.div>
-            </motion.div>
+            <div className="l-grid-maincontent">
+                <SectionHeader scrollText="About" title="Good design makes life better." />
+                <Tech />
+                <StartProject />
+            </div>
         </Layout>
     );
 }

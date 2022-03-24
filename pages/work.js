@@ -12,14 +12,12 @@ export default function work() {
     return (
         <Layout>
             <NextSeo title="About page" />
-            <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent">
-                <motion.div variants={fade}>
-                    <SectionHeader scrollText="WORK" title="I Help brilliant brands and organisations be more effective online." />
-                    <Work />
-                    <Tech />
-                    <StartProject />
-                </motion.div>
-            </motion.div>
+            <div className="l-grid-maincontent">
+                <SectionHeader scrollText="WORK" title="I Help brilliant brands and organisations be more effective online." />
+                <Work />
+                <Tech />
+                <StartProject />
+            </div>
         </Layout>
     );
 }
