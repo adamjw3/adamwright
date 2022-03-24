@@ -100,7 +100,7 @@ const HomeServices: React.FC = () => {
                         )}
                     </InView>
                 </div>
-                <FancyLink destination="/contact" a11yText="text" extraClasses="c-home-services__link">
+                <FancyLink destination="/services" a11yText="text" extraClasses="c-home-services__link">
                     View Services.
                 </FancyLink>
             </div>

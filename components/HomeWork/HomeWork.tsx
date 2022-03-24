@@ -32,7 +32,7 @@ const HomeWork: React.FC = () => {
                         </div>
                     )}
                 </InView>
-                <FancyLink destination="/contact" a11yText="text" extraClasses="c-home-work__link">
+                <FancyLink destination="/work" a11yText="text" extraClasses="c-home-work__link">
                     View Work.
                 </FancyLink>
             </div>
