@@ -6,13 +6,10 @@ const Mobile = () => {
 
     const OnNavigateClick = (event) => {
         if (event.target.classList.contains('c-header__mobile-contact')) {
-            document.getElementsByTagName('body')[0].style.overflow = 'auto';
             setIsMenuOpen(false);
         } else if (!isMenuOpen) {
-            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
             setIsMenuOpen(true);
         } else {
-            document.getElementsByTagName('body')[0].style.overflow = 'auto';
             setIsMenuOpen(false);
         }
     };
